@@ -7,9 +7,12 @@
  * Return: string
  */
 
-char *char_str(char c)
+char *char_str(va_list ap)
 {
+	char c;
 	char *s;
+
+	c = va_arg(ap, int);
 	
 	s = malloc(sizeof(char) * 2);
 	if (s == NULL)
