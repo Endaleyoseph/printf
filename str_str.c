@@ -11,14 +11,18 @@ char *str_str(va_list ap)
 {
 	char *dest;
 	char *s;
+	int len;
 
 	s = va_arg(ap, char *);
 	if (s == NULL)
 		s = "(null)";
-	
-	dest = malloc(sizeof(s) * (_strlen(s) + 1));
+
+	len = _strlen(s);
+
+	dest = malloc(sizeof(char) * len + 1);
 
 	if (dest == NULL)
 		return (NULL);
+
 	return (_strcpy(dest, s));
 }

@@ -1,11 +1,18 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdarg.h>
+#include <unistd.h>
 
-char *char_str(char c);
+char *char_str(va_list ap);
 int _strlen(char *s);
-char *_strcpy(char *s);
-char *(*get_function(char c))(va_list);
+char *_strcpy(char *dest, char *s);
+char *str_str(va_list ap);
+char *print_num(int n, int mul, int len);
+char *num_str(va_list ap);
+char *create_buf(void);
+char* (*get_function(char c))(va_list);
+void print_buffer(char *buffer, int len, va_list ap);
+int _printf(const char *format, ...);
 
 /**
  * struct data - contains two elements
@@ -19,7 +26,7 @@ char *(*get_function(char c))(va_list);
 typedef struct data
 {
 	char c;
-	char* (*fun(va_list));
+	char* (*fun)(va_list);
 } data_t;
 
 #endif

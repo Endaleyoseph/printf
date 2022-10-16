@@ -13,10 +13,11 @@ char *char_str(va_list ap)
 	char *s;
 
 	c = va_arg(ap, int);
-	
+
 	s = malloc(sizeof(char) * 2);
 	if (s == NULL)
 		return (NULL);
 	s[0] = c;
 	s[1] = 1;
+	return (s);
 }

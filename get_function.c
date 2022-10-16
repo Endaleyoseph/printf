@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 #include <stdlib.h>
 #include <stdarg.h>
 
@@ -8,11 +8,13 @@
  * Return: pointer to function
  */
 
-char *(*get_function(char c))(va_list)
+char* (*get_function(char c))(va_list)
 {
 	data_t chose[] = {
 		{'c', char_str},
 		{'s', str_str},
+		{'i', num_str},
+		{'d', num_str},
 		{'\0', NULL}
 	};
 	int i = 0;
@@ -20,7 +22,8 @@ char *(*get_function(char c))(va_list)
 	while (chose[i].c != '\0')
 	{
 		if (chose[i].c == c)
-			return (chose[i].fun(va_list));
+			return (chose[i].fun);
+		i++;
 	}
 
 	return (NULL);
