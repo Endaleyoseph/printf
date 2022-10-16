@@ -52,14 +52,14 @@ char *print_num(int n, int mul, int len)
 		str[i] = '-';
 		i++;
 	}
-	while (n < 0)
+	while (n <= 0 && i < (len + 1))
 	{
 		str[i] = ((n / mul) * -1 + '0');
 		n = n % mul;
 		mul /= 10;
 		i++;
 	}
-	while (n > 0)
+	while (n >= 0 && i < len)
 	{
 		str[i] = ((n / mul) + '0');
 		n = n % mul;
