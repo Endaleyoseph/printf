@@ -15,6 +15,7 @@ char *create_buf(void);
 char* (*get_function(char c))(va_list);
 void print_buffer(char *buffer, int len, va_list ap);
 int _printf(const char *format, ...);
+char *_octal(va_list ap);
 
 /**
  * struct data - contains two elements

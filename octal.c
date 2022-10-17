@@ -1,25 +1,28 @@
 #include "main.h"
 
 /**
- * binary - converts number to binary
+ * _octal- converts number to octal
  * @ap: action parameter
- * Return: the binary
+ * Return: the octal
  */
-int octal(va_list ap)
+char *_octal(va_list ap)
 {
-	int octalNum = 0, countval = 1;
+	int n, len, mul, x;
 
 	n = va_arg(ap, int);
 	if (n < 0)
-	I{
+	{
 		exit(98);
 	}
-	while (Num != 0) 
+
+	len = x = 0;
+	mul = 1;
+	while (n != 0)
 	{
-		int remainder = Num % 8;
-		octalNum += remainder * countval;
-		countval = countval * 10;
-		Num /= 8;
+		x += (n % 8) * mul;
+		mul *= 10;
+		n /= 8;
+		len++;
 	}
-	return (octalNUM);
+	return (print_num(x, mul / 10, len));
 }
