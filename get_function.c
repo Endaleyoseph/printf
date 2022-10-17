@@ -15,6 +15,7 @@ char* (*get_function(char c))(va_list)
 		{'s', str_str},
 		{'i', num_str},
 		{'d', num_str},
+		{'b', binary},
 		{'\0', NULL}
 	};
 	int i = 0;
