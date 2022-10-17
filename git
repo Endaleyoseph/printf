@@ -1,7 +1,8 @@
 git add .
 
-git commit -m "task 0x08"
+git commit -m "printf project" 
 
-git push
+git push origin Mahlet
+
 
 
