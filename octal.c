@@ -5,13 +5,13 @@
  * @ap: action parameter
  * Return: the binary
  */
-void octal(va_list ap)
+int octal(va_list ap)
 {
 	int octalNum = 0, countval = 1;
 
 	n = va_arg(ap, int);
 	if (n < 0)
-	{
+	I{
 		exit(98);
 	}
 	while (Num != 0) 
@@ -21,5 +21,5 @@ void octal(va_list ap)
 		countval = countval * 10;
 		Num /= 8;
 	}
-	return ();
+	return (octalNUM);
 }
