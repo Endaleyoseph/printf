@@ -1,0 +1,7 @@
+git add .
+
+git commit -m "task 0x08"
+
+git push
+
+
