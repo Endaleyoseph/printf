@@ -18,6 +18,7 @@ char* (*get_function(char c))(va_list)
 		{'b', binary},
 		{'o', octal},
 		{'r', str_rev},
+		{'R', str_rot13},
 		{'\0', NULL}
 	};
 	int i = 0;
