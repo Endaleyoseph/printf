@@ -49,7 +49,7 @@ char *oct_str(int num, int x, int mul, int len)
 		return (NULL);
 	if (num < 0)
 	{
-		str[i] = '1';
+		str[i] = '-';
 		i++;
 	}
 	while (x > 0)

@@ -3,7 +3,7 @@
 
 /**
  * char_str - converts character to string
- * @c: character to be converted
+ * @ap: character to be converted
  * Return: string
  */
 
