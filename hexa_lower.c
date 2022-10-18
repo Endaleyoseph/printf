@@ -7,7 +7,7 @@
  */
 char *_hexa_lower(va_list ap)
 {
-	int n;
+	int n, i = 0, len = 0;
 	char s[16] = "0123456789abcdef";
 	char *ns;
 	char *dest;
@@ -24,6 +24,11 @@ char *_hexa_lower(va_list ap)
 	{
 		ns[i++] = (s[n % 16]);
 		n /= 16;
+		len++;
 	}
-	return (str_rev(dest, ns));
+	dest = malloc(sizeof(char) * len + 1);
+
+	if (dest == NULL)
+		return (NULL);
+	return (_strrev(dest, ns));
 }

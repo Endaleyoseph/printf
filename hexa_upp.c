@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * _hexa- converts number to hexadecimal
@@ -7,7 +7,7 @@ i#include "main.h"
  */
 char *_hexa_upper(va_list ap)
 {
-	int n;
+	int n, len = 0, i = 0;
 	char s[16] = "0123456789ABCDEF";	
 	char *ns;
 	char *dest;
@@ -24,6 +24,11 @@ char *_hexa_upper(va_list ap)
 	{
 		ns[i++] = (s[n % 16]);
 		n /= 16;
+		len++;
 	}
-	return (str_rev(dest, ns));
+	dest = malloc(sizeof(char) * len + 1);
+
+	if (dest == NULL)
+		return (NULL);
+	return (_strrev(dest, ns));
 }
