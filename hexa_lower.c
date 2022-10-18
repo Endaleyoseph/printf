@@ -1,14 +1,14 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * _hexa- converts number to hexadecimal
  * @ap: action parameter
  * Return: the hexadecimal
  */
-char *_hexa_upper(va_list ap)
+char *_hexa_lower(va_list ap)
 {
 	int n;
-	char s[16] = "0123456789ABCDEF";	
+	char s[16] = "0123456789abcdef";
 	char *ns;
 	char *dest;
 
