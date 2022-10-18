@@ -11,8 +11,10 @@ char *str_str(va_list ap);
 char *print_num(int n, int mul, int len);
 char *num_str(va_list ap);
 char *binary(va_list ap);
+char *dec_octal(va_list ap);
+char *oct_str(int num, int x, int mul, int len);
 char *create_buf(void);
-char* (*get_function(char c))(va_list);
+char* (*get_function(char c))(va_list ap);
 void print_buffer(char *buffer, int len, va_list ap);
 int _printf(const char *format, ...);
 

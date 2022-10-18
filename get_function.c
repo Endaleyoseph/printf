@@ -16,6 +16,7 @@ char* (*get_function(char c))(va_list)
 		{'i', num_str},
 		{'d', num_str},
 		{'b', binary},
+		{'o', dec_octal},
 		{'\0', NULL}
 	};
 	int i = 0;
