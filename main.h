@@ -16,6 +16,11 @@ char* (*get_function(char c))(va_list);
 void print_buffer(char *buffer, int len, va_list ap);
 int _printf(const char *format, ...);
 char *_octal(va_list ap);
+char *_hexa(va_list ap);
+char * _strrev(char *dest, char *s);
+char *str_rev(va_list ap);
+char *_strrot13(char *dest, char *s);
+char *str_rot13(va_list ap); 
 
 /**
  * struct data - contains two elements
