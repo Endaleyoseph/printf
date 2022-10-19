@@ -19,6 +19,9 @@ char* (*get_function(char c))(va_list)
 		{'o', dec_octal},
 		{'x', int_hex},
 		{'X', int_heX},
+		{'u', _unsigned},
+		{'r', str_rev},
+		{'R', str_rot13},
 		{'\0', NULL}
 	};
 	int i = 0;
