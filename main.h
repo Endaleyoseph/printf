@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+#define BUFF_SIZE 1024
+
 char *char_str(va_list ap);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *s);
@@ -16,6 +18,12 @@ char *dec_octal(va_list ap);
 char *int_hex(va_list ap);
 char *int_heX(va_list ap);
 char *oct_str(int num, int x, int mul, int len);
+char * _strrev(char *dest, char *s);
+char *_unsigned(va_list ap);
+char *unsigned_str(int num, int x, int mul, int len);
+char *str_rev(va_list ap);
+char *_strrot13(char *dest, char *s);
+char *str_rot13(va_list ap); 
 char *create_buf(void);
 char* (*get_function(char c))(va_list ap);
 void print_buffer(char *buffer, int len, va_list ap);
