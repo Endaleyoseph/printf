@@ -8,7 +8,7 @@
  *Return: reversed copy string
  */
 
-char * _strrev(char *dest, char *s)
+char *_strrev(char *dest, char *s)
 {
 	char c;
 	int i, len;
