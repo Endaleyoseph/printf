@@ -40,5 +40,6 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
+    _printf("mine rot13'ed:[%r]\n", "my rot13 string");
     return (0);
 }

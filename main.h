@@ -22,7 +22,7 @@ char * _strrev(char *dest, char *s);
 char *_unsigned(va_list ap);
 char *unsigned_str(int num, int x, int mul, int len);
 char *str_rev(va_list ap);
-char *_strrot13(char *dest, char *s);
+char *_strrot13(char *dest, char *str);
 char *str_rot13(va_list ap); 
 char *create_buf(void);
 char* (*get_function(char c))(va_list ap);
