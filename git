@@ -1,0 +1,5 @@
+git add .
+
+git commit -m "task 0x11 - printf project edited"
+
+git push

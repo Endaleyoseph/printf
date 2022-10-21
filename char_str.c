@@ -18,6 +18,5 @@ char *char_str(va_list ap)
 	if (s == NULL)
 		return (NULL);
 	s[0] = c;
-	s[1] = 1;
 	return (s);
 }

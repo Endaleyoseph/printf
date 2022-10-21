@@ -29,6 +29,7 @@ char* (*get_function(char c))(va_list ap);
 void print_buffer(char *buffer, int len, va_list ap);
 int _printf(const char *format, ...);
 
+
 /**
  * struct data - contains two elements
  * @c: character

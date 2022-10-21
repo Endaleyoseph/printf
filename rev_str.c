@@ -3,6 +3,7 @@
 /**
  * rev_str - reverses a string
  * @str: string to be reversed
+ *@num: number
  * Return: reversed string
  */
 
